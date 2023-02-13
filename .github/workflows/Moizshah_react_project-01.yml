@@ -4,7 +4,8 @@ name: Moizshah_react_project-01
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branchon 
-on: 
+on:
+
   push:
     branches: [ main ]
   
@@ -30,5 +31,5 @@ jobs:
       run: npm install --global surge
 
     - name: Deploy using Surge
-      run: surge ./moizshah-react-project-01.surge.sh --token ${{ secrets.dev}}
-      #run: surge ./moizshah-react-project-01.surge.sh --token "411e7a129efe4681fa011e30e7d9a0b2"
+     # run: surge ./moizshah-react-project-01.surge.sh --token ${{ secrets.PROJECTS}}
+      run: surge./moizshah-react-project-01.surge.sh --token "411e7a129efe4681fa011e30e7d9a0b2"
