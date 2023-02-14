@@ -31,4 +31,4 @@ jobs:
       - name: Installing surge
         run: npm install --global surge
       - name: deploying using surge
-        run: surge ./ moizshah-react-project-01.surge.sh --token ${{ secrets.Moizshah_react_project_01 }}
+        run: surge ./ moizshah-react-project-01.surge.sh --token ${{ secrets.MOIZSHAH_REACT_PROJECT_01 }}
